@@ -1,59 +1,69 @@
-# MyPortfolio
+Angular Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+A personal portfolio website that I am building as a Frontend Developer fresher to showcase my skills, projects, and learning journey.
 
-## Development server
+This project is also a practical way for me to learn and strengthen my Angular and TypeScript fundamentals by applying each concept while building a real website.
 
-To start a local development server, run:
+👩‍💻 About Me
 
-```bash
-ng serve
-```
+I’m a Frontend Developer fresher with knowledge of:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Angular
+TypeScript
+JavaScript
+HTML
+CSS
 
-## Code scaffolding
+I enjoy creating responsive and user-friendly web interfaces and I'm continuously working on improving my frontend development skills.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🛠️ Technologies
+Angular
+TypeScript
+JavaScript
+HTML5
+CSS3
+📚 What I'm Learning
 
-```bash
-ng generate component component-name
-```
+While building this portfolio, I'm practicing Angular concepts such as:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Components
+TypeScript variables
+Interfaces
+Arrays and objects
+Interpolation
+Event binding
+Conditional rendering with @if
+List rendering with @for
+track
+Semantic HTML
+Component-based development
 
-```bash
-ng generate --help
-```
+I’m learning these concepts step by step and applying them directly to the project.
 
-## Building
+✨ Current Sections
+Hero
+About
 
-To build the project run:
+More sections will be added as I continue developing the portfolio.
 
-```bash
-ng build
-```
+🎯 Goal of This Project
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The goal of this project is to:
 
-## Running unit tests
+Build a real Angular project from scratch
+Strengthen my frontend fundamentals
+Practice TypeScript with Angular
+Understand Angular templates and components
+Improve my responsive UI development skills
+Create a portfolio that represents my learning journey
+🔮 Planned Sections
+Skills
+Projects
+Education
+Contact
+Responsive Navigation
+🚧 Project Status
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Work in Progress
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This portfolio is currently under development. I’m building it step by step while learning Angular and improving my frontend development skills.
