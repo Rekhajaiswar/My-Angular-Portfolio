@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #210635;
+  color: #F5D5E0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --bg-dark: #210635;
+  --purple-deep: #420D4B;
+  --purple-mid: #7B337E;
+  --lavender: #6667AB;
+  --text-light: #F5D5E0;
+}
