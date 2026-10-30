@@ -7,9 +7,25 @@ import { Component } from '@angular/core';
   templateUrl: './projects.html',
 })
 export class Projects {
-  title = "first-project";
-  description = "Ecommerce Website";
-  technologies = "Angular, TypeScript, HTML, CSS";
-  links = "github";
-  url = "livedemo";
+  projects = [
+    {
+      projectTitle: 'first-project',
+      web: 'Ecommerce Website',
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Bootstrap'],
+      img: 'Ecommerce Website.png',
+      liveUrl: '...',
+      githubUrl: '...'
+      },
+    {
+      projectTitle: 'second-project',
+      web: 'Ticket Booking Website',
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'SQL', 'API',],
+      img: 'Ticket Booking Website',
+      liveUrl: '...',
+      githubUrl: '...'
+      }
+  ];
+
+
 }
+

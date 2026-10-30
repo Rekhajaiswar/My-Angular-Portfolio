@@ -1,13 +1,14 @@
-<section id="project-card">
-  <h2>{{title}}</h2>
-  <div class="project-image">
-    <img src="Ecommerce.png" alt="Ecommerce Website">
-  </div>
-  <div class="project-details">
- <p>{{description}}</p>
-  <p>{{technologies}}</p>
-  <p> {{links}}</p>
-  <p> {{url}}</p>
-  </div>
+<section id="projects">
+@for (project of projects; track project.projectTitle) {
+  <section id="project-card">
+    <h2>{{ project.projectTitle }}</h2>
+    <p>{{ project.web }}</p>
+    <img [src]="'Ecommerce.png'" [alt]="project.projectTitle">
+    <img [src]="'tick.png'" [alt]="project.projectTitle">
+    <p>{{ project.technologies.join(', ') }}</p>
+    <p>{{ project.liveUrl }}</p>
+    <p>{{ project.githubUrl }}</p>
+  </section>
+}
 
 </section>

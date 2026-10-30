@@ -1,81 +1,73 @@
-.section-skills{
-  padding: 80px;
-  text-align:center;
-  background-color:#210635;
-  color:#F5D5E0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin:10px;
-  font-size:20px;
+#skills{
+  scroll-behavior:smooth;
+  scroll-margin-top:80px;
 }
 
-.section-skills h2{
-  font-size:30px;
-  margin-right:10px;
+.skills-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #420D4B;
   color: #F5D5E0;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.section-skills h2:hover{
+.skills-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.skills-section h2:hover{
   transform: scale(1.1);
   color: #6667AB;
 }
-
-.section-skills p{
-  font-size:18px;
-  margin: 20px 0;
-  color: #6667AB;
+.skills-subtitle {
+  margin-bottom: 30px;
+  opacity: 0.85;
 }
-.container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:baseline;
+.skills-subtitle p:hover {
+  color: #3b3ec7;
+
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 730px;
   margin:0 auto;
-  max-width:1200px;
-  padding: 0 12px;
 
 }
 
 .skill-card {
-  flex-basis: calc(33.33% - 20px);
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #420D4B;
-  color: #F5D5E0;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-.skill-icon i {
-  font-size: 50px;
-  color:white;
-
+  padding: 5px 10px;
+  background-color: #2D1037; /* Main background se thoda lighter dark purple shade */
+  border: 2px solid rgba(245, 213, 224, 0.15); /* Ek subtle border jo design ko premium banaye */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*skills color change*/
-
-.devicon-html5-plain{
-  color:#E34F26;
+.skill-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-color: rgba(245, 213, 224, 0.3);
 }
-
-.devicon-css3-plain {
-  color: #1572B6;
-}
-
-.devicon-javascript-plain {
-  color: #F7DF1E;
+.skill-card i {
+  font-size: 55px;
 }
 
 .devicon-angular-plain {
-  color: #DD0031;
+  color:red;
+}
+.devicon-figma-plain{
+  color:#3b3ec7;
 }
 
-.devicon-git-plain {
-  color: #F05032;
+.skill-card p {
+  margin: 12px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  color:#F5D5E0;
 }
 
-.devicon-figma-plain {
-  color: rgba(113, 174, 224, 0.1);
+@media (max-width: 500px) {
+  .skills-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

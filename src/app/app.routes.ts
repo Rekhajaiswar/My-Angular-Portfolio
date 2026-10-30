@@ -7,10 +7,10 @@ import { Projects } from './features/home/projects/projects';
 import { Hero } from './features/home/hero/hero';
 
 export const routes: Routes = [
-  { path: '', component: Home },
+  { path: 'home', component: Home },
   {path: 'hero', component:Hero},
   {path: 'about', component: About},
   {path: 'skills', component: Skills},
   {path: 'projects', component: Projects},
-  {path: 'contact', component: Contact}
+  {path: 'contact', component: Contact},
 ];
