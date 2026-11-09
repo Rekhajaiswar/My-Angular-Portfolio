@@ -1,3 +1,15 @@
-<section id="contact" class="contact-me">
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <p>Let's connect and work together!</p>
+
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <input type="text" name="name" placeholder =" Your Name" [(ngModel)]="contact.name" required>
+    <input type="email" name="email" placeholder =" Your Email" [(ngModel)]="contact.email" required email>
+    <input type="text" name="subject" placeholder ="Subject" [(ngModel)]="contact.subject" required>
+    <textarea name="message" placeholder ="Your Message" [(ngModel)]="contact.message" required rows="5"></textarea>
+    <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+
+  </form>
 
 </section>
