@@ -1,0 +1,102 @@
+ :root {
+  --bg-translucent: rgba(33, 6, 53, 0.9);
+  --border-color: rgba(233, 165, 235, 0.3);
+  --text-primary: #F5D5E0;
+  --accent-color: #ecedf4;
+ }
+ @media (max-width:600px){
+  body{
+    background-color:#6667AB;
+    color:#ecedf4;
+  }
+
+ }
+
+
+ header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(33, 6, 53, 0.9); /* #210635 translucent */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(233, 165, 235, 0.3); /* #7B337E[cite: 4] */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  max-width: 1000px;
+  scroll-behavior:smooth;
+  scroll-margin-top:80px;
+  margin: 0 auto;
+}
+
+/* Animated Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color:var(--text-primary#F5D5E0);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #6667AB;
+}
+
+/* Nav Links */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin: 0;
+  padding:0;
+}
+.menu-btn{
+  display: 1px;;
+  font-size:24px;
+  cursor: pointer;
+  background:#fff;
+  border:#F5D5E0;
+  border-radius: 5px;
+}
+.menu-btn:hover{
+  background:#a6b3ee;
+}
+.nav-list a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  display:inline-block;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Hover Underline Effect */
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #6667AB; /* #6667AB[cite: 4] */
+  transition: width 0.3s ease;
+}
+
+.nav-list a:hover {
+  color:var(--accent-color);
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
